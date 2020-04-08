@@ -18,7 +18,7 @@ class App extends React.Component {
     }
 
     handleWindowResize(){
-        if(window.innerWidth > 500){
+        if(window.innerWidth > 700){
             this.setState({mobile:false})
         }else{
             this.setState({mobile:true})

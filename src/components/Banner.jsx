@@ -3,45 +3,43 @@ import AppContext from "../AppContext.js"
 import {Grid,Card,CardContent,Typography} from "@material-ui/core"
 
 
+
 export default function Banner(){
     var context = useContext(AppContext)
-    const [style,setStyle] = useState({
-        height:"47.5vw", //100vh
-        width:"101vw",
-        backgroundImage:"url('images/banner.png')",
+    const [picStyle,setStyle] = useState({
+        backgroundImage:"url('images/main.png')",
         backgroundRepeat:"no-repeat",
-        // backgroundPosition:"center",
-        backgroundSize:"100% 100%",
-
+        backgroundSize:"100% auto",
+        height:"100vh",
     })
 
 
     useEffect(()=>{
-        // if(context.mobile){
-        //     setStyle({...style}) //heigth 50vh,40vw
-        // // }else{
-        // //      setStyle({...style,backgroundSize:"100% 90%"})
-        // }
+        if(context.mobile){
+            setStyle({...picStyle,height:"50vh",backgroundPosition:"top"}) 
+        }else{
+             setStyle({...picStyle,height:"100vh",backgroundPosition:"center"})
+        }
     })
 
   
     return(
-        <Grid item lg={12} md={12} sm={12} xs={12} style={style}>
-          <img src="images/" alt="my-picture"/>
-         </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} style={style}>
-           <h1 style={{fontFamily:"Berkshire Swash",marginLeft:"2vw",marginTop:"-0.0vw",fontSize:"4vw",fontWeight:"200"}}>Sabrina Koumoin</h1>
-                <Card style={{padding:"1vw",width:"30vw",textAlign:"center"}}>
-                    <CardContent>
-                        <Typography>
-                            <h2>About Me</h2>
-                              <h2>Web Developer Portfolio</h2>
-                                <h2>Tech Blog</h2>
-                                  <h2>Contact</h2>
-                        </Typography>
-                    </CardContent>
-                </Card>
-         
+        <Grid container>
+            <Grid item lg={6} md={6} sm={12} xs={12} style={picStyle}>
+                
+            </Grid>
+            <Grid item lg={6} md={6} sm={12} xs={12} style={{textAlign:"center"}}>
+               
+                <h1 style={{fontFamily:"Berkshire Swash",fontSize:"10vh",fontWeight:"200"}}>Sabrina Koumoin</h1>
+                     <blockquote style={{fontFamily:"1vw"}}> 
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
+                </blockquote>
+                                <h2 style={{fontSize:"5vh",fontWeight:"200"}}>More About Me</h2>
+                                <h2 style={{fontSize:"5vh",fontWeight:"200"}}>Web Developer Portfolio</h2>
+                                <h2 style={{fontSize:"5vh",fontWeight:"200"}}><a href="https://brinascode.github.io">Brinascode Tech Blog</a></h2>
+                         
+            
+            </Grid>
          </Grid>
     )
 }

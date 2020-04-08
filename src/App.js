@@ -39,7 +39,7 @@ class App extends React.Component {
                 <AppContext.Provider value={this.state}>
                     <Grid container>
                             <Banner/>
-                            <Grid item lg={12} md={12} sm={12} xs={12}>
+                            <Grid item lg={12} md={12} sm={12} xs={12} >
                                 <Switch>
                                     <Route exact path="/" component={AboutMe} />
                                     <Route path="/aboutme" component={AboutMe} />

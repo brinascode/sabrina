@@ -1,8 +1,16 @@
-import React from "react"
+import React, {useState,useContext,useEffect} from "react"
 export default function AboutMe(){
+    const [style,setStyle] = useState({
+        marginTop:"-5vw",
+        backgroundColor:"purple",
+        
+    })
+
     return(
-        <div>
+        <div style={style}>
             ABout me
         </div>
     )
+ 
+    
 }

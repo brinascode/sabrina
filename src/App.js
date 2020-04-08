@@ -4,6 +4,7 @@ import './App.css';
 import AppContext from "./AppContext.js"
 import {Switch,Route,Router} from "react-router"
 import Banner from "./components/Banner"
+import Footer from "./components/Footer.jsx"
 import AboutMe from "./pages/AboutMe.jsx"
 import Portfolio from "./pages/Portfolio.jsx"
 import {Grid} from "@material-ui/core"
@@ -46,6 +47,7 @@ class App extends React.Component {
                                     <Route path="/portfolio" component={Portfolio} />
                                 </Switch>
                             </Grid>
+                            <Footer/>
                     </Grid>
                 </AppContext.Provider>
         );

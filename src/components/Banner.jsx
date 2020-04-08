@@ -6,22 +6,22 @@ import {Grid,Card,CardContent,Typography} from "@material-ui/core"
 export default function Banner(){
     var context = useContext(AppContext)
     const [style,setStyle] = useState({
-        height:"100vh",
-        backgroundColor:"pink",
+        height:"47.5vw", //100vh
+        width:"101vw",
         backgroundImage:"url('images/banner.png')",
         backgroundRepeat:"no-repeat",
         // backgroundPosition:"center",
-        backgroundSize:"contain",
+        backgroundSize:"100% 100%",
 
     })
 
 
     useEffect(()=>{
-        if(context.mobile){
-            setStyle({...style,backgroundSize:"contain",height:"50vw"})
-        }else{
-             setStyle({...style,backgroundSize:"100% 90%"})
-        }
+        // if(context.mobile){
+        //     setStyle({...style}) //heigth 50vh,40vw
+        // // }else{
+        // //      setStyle({...style,backgroundSize:"100% 90%"})
+        // }
     })
 
   

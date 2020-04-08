@@ -12,7 +12,7 @@ class App extends React.Component {
     constructor(){
         super()
         this.state={
-            mobile:false
+            mobile:window.innerWidth > 500 ? false : true
         }
         this.handleWindowResize = this.handleWindowResize.bind(this)
     }
@@ -23,14 +23,11 @@ class App extends React.Component {
         }else{
             this.setState({mobile:true})
         }
-        console.log(this.state.mobile)
     }
 
     componentWillMount(){
-        window.addEventListener("resize",this.handleWindowResize)
-        this.handleWindowResize()
+        window.addEventListener("resize",this.handleWindowResize) 
     }
-
 
     componentWillUnmount(){
         window.removeEventListener("resize",this.handleWindowResize)

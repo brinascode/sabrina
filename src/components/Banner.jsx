@@ -27,9 +27,11 @@ export default function Banner(){
   
     return(
         <Grid item lg={12} md={12} sm={12} xs={12} style={style}>
-            <h1 style={{fontFamily:"Berkshire Swash",marginLeft:"2vw",marginTop:"-0.0vw",fontSize:"4vw",fontWeight:"200"}}>Sabrina Koumoin</h1>
-            <div style={{marginTop:"7vw",marginRight:"4vw",display:"flex",flexFlow:"row wrap",justifyContent:"flex-end",}}>
-                <Card style={{paffing:"1vw",width:"30vw",textAlign:"center"}}>
+          <img src="images/" alt="my-picture"/>
+         </Grid>
+          <Grid item lg={6} md={6} sm={12} xs={12} style={style}>
+           <h1 style={{fontFamily:"Berkshire Swash",marginLeft:"2vw",marginTop:"-0.0vw",fontSize:"4vw",fontWeight:"200"}}>Sabrina Koumoin</h1>
+                <Card style={{padding:"1vw",width:"30vw",textAlign:"center"}}>
                     <CardContent>
                         <Typography>
                             <h2>About Me</h2>
@@ -39,7 +41,7 @@ export default function Banner(){
                         </Typography>
                     </CardContent>
                 </Card>
-            </div>
+         
          </Grid>
     )
 }

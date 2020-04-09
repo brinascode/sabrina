@@ -4,7 +4,9 @@ import './App.css';
 import AppContext from "./AppContext.js"
 import {Switch,Route,Router} from "react-router"
 import Banner from "./components/Banner"
+import Footer from "./components/Footer.jsx"
 import AboutMe from "./pages/AboutMe.jsx"
+import Experience from "./pages/Experience.jsx"
 import Portfolio from "./pages/Portfolio.jsx"
 import {Grid} from "@material-ui/core"
 import { render } from '@testing-library/react';
@@ -43,9 +45,11 @@ class App extends React.Component {
                                 <Switch>
                                     <Route exact path="/" component={AboutMe} />
                                     <Route path="/aboutme" component={AboutMe} />
+                                    <Route path="/experience" component={Experience} />
                                     <Route path="/portfolio" component={Portfolio} />
                                 </Switch>
                             </Grid>
+                            <Footer/>
                     </Grid>
                 </AppContext.Provider>
         );

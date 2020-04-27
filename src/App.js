@@ -8,6 +8,7 @@ import Footer from "./components/Footer.jsx"
 import AboutMe from "./pages/AboutMe.jsx"
 import Experience from "./pages/Experience.jsx"
 import Portfolio from "./pages/Portfolio.jsx"
+import Blog from "./pages/Blog.jsx"
 import {Grid} from "@material-ui/core"
 import { render } from '@testing-library/react';
 
@@ -42,11 +43,13 @@ class App extends React.Component {
                     <Grid container>
                             <Banner/>
                             <Grid item lg={12} md={12} sm={12} xs={12} >
+                               
                                 <Switch>
                                     <Route exact path="/" component={AboutMe} />
                                     <Route path="/aboutme" component={AboutMe} />
                                     <Route path="/experience" component={Experience} />
                                     <Route path="/portfolio" component={Portfolio} />
+                                    <Route path="/blog" component={Blog} />
                                 </Switch>
                             </Grid>
                             <Footer/>
@@ -58,3 +61,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+

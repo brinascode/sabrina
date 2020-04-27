@@ -40,12 +40,13 @@ export default function Banner(){
     return(
         <Grid container >
             
-                <a id="banner-top"></a>
+                
                 <Grid item lg={6} md={6} sm={12} xs={12} style={picStyle}>
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12} style={{textAlign:"center"}}>
                         <br></br><br></br>  
                             <h1 style={{fontSize:"8vh",fontWeight:"700",fontFamily:"Berkshire Swash"}}>Sabrina Koumoin</h1>
+                                <a id="banner-top"></a>
                                 <blockquote style={{fontFamily:"2.5vw"}}> 
                                 Fullstack Web Developer | JS Bootcamp Assistant Instructor |  CS Student
                                 </blockquote>   

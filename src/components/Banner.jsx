@@ -52,7 +52,7 @@ export default function Banner(){
                                 <a href="https://linkedin.com/in/sabrina-k-00629a120" className="fa fa-linkedin fa-3x siteColor"></a>
                                             <a href="https://github.com/brinascode" className="fa fa-github "></a>
                                             <a href="https://instagram.com/brinascode" className="fa fa-instagram fa-3x siteColor"></a>
-                                            <a href="https://twitter.com/@brinascode" className="fa fa-twitter fa-3x "></a>
+                                            {/* <a href="https://twitter.com/@brinascode" className="fa fa-twitter fa-3x "></a> */}
                                             <a href="mailto:sabrina.koumoin2@gmail.com" className="fa fa-envelope fa-3x siteColor"></a>        
 
                 

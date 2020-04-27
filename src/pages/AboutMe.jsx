@@ -33,7 +33,7 @@ export default function AboutMe(){
                         {/* <h2>How it started</h2> */}
                         <p className="regular-text">
 
-                        <h2>How it began</h2>
+                        <h2>Left Brain, Right Brain</h2>
 
                         <blockquote style={{fontFamily:"Baloo Tamma 2"}} >
                                 "Study the science of art; Study the art of science. Learn how to see. Realize that everything connects to everything else."
@@ -51,16 +51,16 @@ export default function AboutMe(){
 
                      
                         <p className="regular-text">
-                            <h2>How it began</h2>
-                            I would tell them the following:<br></br>
+                            <h2>My favorite pieces of advice</h2>
+
                             1. Be your WHOLE you: Don’t shred aspects of your fun/amazing personality to fit the mold of what you believe a techie should be like. <br></br><br></br>
                             2. Focus on learning concepts first: My dad always tells me that if you learn how to read a map, even if the cities change, you can still find your way. Learn concepts so that you can easily pick up new technologies. <br></br><br></br>
                             3. Don’t quit when it gets challenging: Eventually in your tech journey things WILL get hard. That’s the time you need to double down on your skills and focus instead quitting. Because you will improve and things will make sense soon enough <br></br>
                         </p>
                     </Grid>
                     <Grid item lg={6} md={6} sm={12} xs={12} >
-                        <img src={myPic} alt="picture"  width="60%" style={{margin:"5vw",borderRadius:"8px",boxShadow:"3px 3px 10px lightgray"}}/>
-                        <img src={myPic2} alt="picture"  width="60%" style={{margin:"2vw",borderRadius:"8px",boxShadow:"3px 3px 10px lightgray"}}/>
+                        <img src={myPic} alt="picture"  width="80%" style={{margin:"5vw",borderRadius:"8px",boxShadow:"3px 3px 10px lightgray"}}/>
+                        <img src={myPic2} alt="picture"  width="80%" style={{margin:"2vw",borderRadius:"8px",boxShadow:"3px 3px 10px lightgray"}}/>
                     </Grid>
                     <Grid item lg={6} md={6} sm={12} xs={12}>
                       

@@ -32,7 +32,7 @@ class Blog extends React.Component{
                             </Grid>
                             <Grid item lg={12} md={12} sm={12} xs={12}>
                                 <a href="https://brinascode.github.io" style={{textDecoration:"underline",color:"#ff5757"}}> 
-                                    <img src={brinasCodePic} alt="brinascode" width="50%" />
+                                    <img src={brinasCodePic} alt="brinascode" width="70%" />
                                 </a>
                             </Grid>
                             
@@ -46,7 +46,7 @@ class Blog extends React.Component{
 
                             <Grid item lg={12} md={12} sm={12} xs={12}>
                                 <a href="https://techtwox.com/an-interview-with-sabrina/" >
-                                    <img src={techTwoPicture} alt="interview-picture" width="50%"/>
+                                    <img src={techTwoPicture} alt="interview-picture" width="70%"/>
                                 </a>
                             </Grid>
                 </Grid>

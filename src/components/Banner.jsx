@@ -39,8 +39,6 @@ export default function Banner(){
 
     return(
         <Grid container >
-            
-                
                 <Grid item lg={6} md={6} sm={12} xs={12} style={picStyle}>
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12} style={{textAlign:"center"}}>
@@ -54,7 +52,7 @@ export default function Banner(){
                                             <a href="https://github.com/brinascode" className="fa fa-github "></a>
                                             <a href="https://instagram.com/brinascode" className="fa fa-instagram fa-3x siteColor"></a>
                                             {/* <a href="https://twitter.com/@brinascode" className="fa fa-twitter fa-3x "></a> */}
-                                            <a href="mailto:sabrina.koumoin2@gmail.com" className="fa fa-envelope fa-3x siteColor"></a>        
+                                            <a href="mailto:sabrina.koumoin2@gmail.com" className="fa fa-envelope fa-3x"></a>        
 
                 
                                         <div style={menuStyle}>

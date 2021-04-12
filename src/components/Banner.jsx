@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {HashLink} from "react-router-hash-link"
 import AppContext from "../AppContext.js"
 import {Grid,Card,CardContent,Typography,AppBar,Toolbar} from "@material-ui/core"
-import mainBannerPic from "../images/second-me.png"
+import mainBannerPic from "../images/red.png"
 import BackToTop from "./BackToTop"
 
 export default function Banner(){
@@ -13,7 +13,7 @@ export default function Banner(){
         backgroundImage:`url(${mainBannerPic})`,
         backgroundRepeat:"no-repeat",
         backgroundSize:"127% auto",
-        backgroundColor:"#ff5757",
+        backgroundColor:"#ff5757", //ff5757
         height:"90vh", //120
         backgroundPosition:"top",
         borderRadius:"0px 800px 800px 0px", // borderRadius:"0px 00px 600px 600px",
